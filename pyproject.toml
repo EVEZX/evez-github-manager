@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evez-github-manager"
+version = "0.1.0"
+description = "Autonomous GitHub repo management for the EVEZ-OS mesh"
+requires-python = ">=3.9"
+
+[project.scripts]
+evez-ghm = "evez_github_manager.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
